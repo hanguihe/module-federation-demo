@@ -1,0 +1,6 @@
+{
+  "name": "packages",
+  "scripts": {
+    "build": "webpack --config ./build.js"
+  }
+}
