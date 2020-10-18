@@ -1,0 +1,29 @@
+{
+  "name": "webpack-demo",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "package-build": "webpack --config ./packages/config.js",
+    "app-build": "webpack --config ./config/build.js",
+    "serve": "serve ./dist -p 3000",
+    "build": "rm -rf dist && yarn run package-build && yarn run app-build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^5.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "less-loader": "^7.0.2",
+    "mini-css-extract-plugin": "^1.0.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.1.2",
+    "webpack-cli": "^4.0.0"
+  },
+  "dependencies": {
+    "antd": "^4.7.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  }
+}
